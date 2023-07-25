@@ -1,6 +1,8 @@
 /* -----------------------
 -------nevication-ber-styl--------
 -------------------------- */
+
+
 .nevication-ber ul a {
     text-decoration: none;
     color: #3A3A3A;
@@ -12,9 +14,8 @@
 
 .nevication-ber ul {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 34px;
+    display: flex;
+    gap: 34px;
     justify-items: end;
 }
 
@@ -29,17 +30,39 @@ nav {
 -------common-styl--------
 -------------------------- */
 body {
-    margin: 0 auto;
+    margin: 0;
     max-width: 1440px;
-    padding: 70px 120px;
+    padding-top: 70px;
+    padding-left: 120px;
+    padding-right: 120px;
+    gap: 5px;
 
 }
 
 .contener {
-    padding-top: 80px;
+    margin-top: 80px;
     width: 100%;
     background-color: #FFF;
 
+}
+
+.button {
+    width: 148px;
+    height: 30px;
+    padding: 10px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    align-items: center;
+    color: #FFF;
+}
+
+.clear-div {
+    clear: both;
 }
 
 
@@ -74,20 +97,6 @@ body {
 }
 
 
-
-.button button {
-    width: 148px;
-    height: 30px;
-    padding: 10px 24px;
-    border-radius: 41px;
-    background: #E02C6D;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 8px;
-    border: none;
-    align-items: center;
-}
 
 .picture {
     background-image: url(img/images/Circle\ design.svg);
@@ -127,12 +136,115 @@ hr {
 /* -------------------------
 ----Popular-Collection-----
 -------------------------- */
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
 .collection>article>p {
-    margin: 0 auto;
+    margin: 0;
+    color: var(--gray-50, #787885);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.collection>article>h2 {
+    margin-top: 16px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--text-gray-900, #18191F);
+}
+
+.collection article h3 {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .collection>article>img {
     width: 300px;
     border-radius: 5px;
     height: 256px;
+}
+
+
+.item {
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
+.more-option {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(224, 44, 109, 0.87);
+    border: none;
+    background-color: none;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    /* display: flex; */
+    float: right;
+    margin-top: 50px;
+
+}
+
+/* -----------------------------------------
+---------------future-section------------
+----------------------------------------- */
+
+.feture {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.future-img>img {
+    width: 404px;
+    height: 270px;
+    border-radius: 7px;
+}
+
+.detatiels {
+    gap: 16px;
+}
+
+.detatiels>h2 {
+    margin-top: 16px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--text-gray-900, #18191F);
+}
+
+.detatiels>p {
+    margin: 0;
+    color: var(--gray-50, #787885);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 17px;
+}
+
+
+/* ----------------------------
+----- footer-styl ---------
+------------------------------- */
+
+.footers {
+    width: 100%;
+    height: 239px;
+    background: #0A0826;
+    color: #FFF;
 }
