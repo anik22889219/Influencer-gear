@@ -1,0 +1,138 @@
+/* -----------------------
+-------nevication-ber-styl--------
+-------------------------- */
+.nevication-ber ul a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 16px;
+    font-weight: 600;
+    width: 49px;
+    height: 34.8px;
+}
+
+.nevication-ber ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 34px;
+    justify-items: end;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -----------------------
+-------common-styl--------
+-------------------------- */
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 70px 120px;
+
+}
+
+.contener {
+    padding-top: 80px;
+    width: 100%;
+    background-color: #FFF;
+
+}
+
+
+
+/* -----------------------
+-------dash-bord-styles--------
+-------------------------- */
+.dash-bord {
+    display: flex;
+    align-items: flex-end;
+    gap: 100px;
+}
+
+.dash-bord article {
+    margin-bottom: 160px;
+}
+
+.dash-bord article h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #3A3A3A;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.dash-bord article p {
+    font-size: 16px;
+    color: #3A3A3A;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+
+
+.button button {
+    width: 148px;
+    height: 30px;
+    padding: 10px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    align-items: center;
+}
+
+.picture {
+    background-image: url(img/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.picture img {
+    width: 440px;
+    height: 414px;
+}
+
+/* -----------------
+------brand-logo----
+------------------ */
+
+.brand-logos {
+    display: flex;
+    gap: 60px;
+    grid-auto-columns: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    padding-top: 43px;
+    padding-bottom: 40px;
+}
+
+hr {
+    color: #C0CCDA;
+    max-width: 1110px;
+
+
+}
+
+/* -------------------------
+----Popular-Collection-----
+-------------------------- */
+.collection>article>p {
+    margin: 0 auto;
+}
+
+.collection>article>img {
+    width: 300px;
+    border-radius: 5px;
+    height: 256px;
+}
