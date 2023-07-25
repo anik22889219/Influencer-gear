@@ -24,6 +24,9 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 /* -----------------------
@@ -31,17 +34,15 @@ nav {
 -------------------------- */
 body {
     margin: 0;
-    max-width: 1440px;
-    padding-top: 70px;
-    padding-left: 120px;
-    padding-right: 120px;
     gap: 5px;
 
 }
 
 .contener {
     margin-top: 80px;
-    width: 100%;
+    max-width: 1440px;
+    padding-left: 120px;
+    padding-right: 120px;
     background-color: #FFF;
 
 }
@@ -136,6 +137,11 @@ hr {
 /* -------------------------
 ----Popular-Collection-----
 -------------------------- */
+.populer-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .collection {
     display: grid;
@@ -149,6 +155,7 @@ hr {
     color: var(--gray-50, #787885);
     font-size: 14px;
     font-weight: 700;
+
 }
 
 .collection>article>h2 {
@@ -208,6 +215,7 @@ hr {
     display: flex;
     align-items: center;
     gap: 90px;
+    margin-bottom: 33px;
 }
 
 .future-img>img {
@@ -247,4 +255,87 @@ hr {
     height: 239px;
     background: #0A0826;
     color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footers>h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.footers>p {
+    color: var(--text-gray-300, #D9DBE1);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 17px;
+    margin-top: 3px;
+    text-align: center;
+
+
+}
+
+.web-logos {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------------
+----- responsiv-layout-styl ---------
+------------------------------- */
+
+@media only screen and (min-width:0px) and (max-width:767px) {
+
+
+    .contener {
+        max-width: 100%;
+        padding: 0 auto;
+
+
+    }
+
+    .dash-bord,
+    .feture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .dash-bord>article {
+        margin-bottom: 0;
+    }
+
+    .brand-logos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+    }
+
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-around;
+
+    }
+
+    .nevication-ber {
+        display: none;
+    }
+
+
+
+    .footers {
+        width: 100%;
+
+    }
 }
