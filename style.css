@@ -382,8 +382,102 @@ hr {
         white-space: nowrap;
     }
 
-    nevication-ber>.footers {
-        width: 100%;
+
+}
+
+
+@media only screen and (min-width:767px) and (max-width:992px) {
+    .contener {
+        max-width: 100%;
+        padding: 0 auto;
 
     }
+
+    .dash-bord,
+    .feture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .dash-bord>article {
+        margin-bottom: 0;
+    }
+
+    .dash-bord {
+        gap: 5px;
+    }
+
+    .brand-logos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+    }
+
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+
+    }
+
+    nav {
+        display: none;
+    }
+
+    .mobile {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        grid-column-gap: 37px;
+        padding: 0;
+        margin-top: 35px;
+
+    }
+
+    .mobile-head>h2 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #3A3A3A;
+        white-space: nowrap
+    }
+
+    .nevication-ber ul {
+        width: 100px;
+        flex-direction: column;
+        gap: 12px;
+        display: none;
+        background: #FFF;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 10px;
+        margin: 0;
+        position: absolute;
+        border-radius: 0px 20px 20px 20px;
+
+    }
+
+    .bars:hover .nevication-ber ul {
+        display: block;
+    }
+
+
+
+    .nevication-ber ul a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        white-space: nowrap;
+    }
+
+    /* .picture img {
+        width: 220;
+        height: 207;
+    } */
+
+
 }
